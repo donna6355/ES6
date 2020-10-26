@@ -28,4 +28,5 @@ const staff = [
     return a.name > b.name ? 1 : -1;
   };
   
+  // String will be decoded by unicode and compared.
   staff.sort(sortByName);
