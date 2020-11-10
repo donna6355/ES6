@@ -12,11 +12,11 @@ class FlashCoupon extends Coupon{
     isRewardsEligible(user){
         return super.isRewardsEligible(user) && this.price > 20;
     }
-    getRewards(user0{
+    getRewards(user){
         if(this.isRewardsEligible(user)){
             this.price = this.price * 0.8;
         }
-    })
+    }
 };
 
 const flash = new FlashCoupon(10);
